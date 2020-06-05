@@ -1,17 +1,18 @@
 <?php
 /**
- * Custom Fields - Spotify plugin for Joomla
- *
- * @author Joomill (info@joomill-extensions.com)
- * @copyright Copyright (c) 2017 Joomill
- * @license GNU Public License
- * @link https://www.joomill-extensions.com/
+ *  package: Custom Fields - Spotify plugin - FREE Version
+ *  copyright: Copyright (c) 2020. Jeroen Moolenschot | Joomill
+ *  license: GNU General Public License version 3 or later
+ *  link: https://www.joomill-extensions.com
  */
 
+// No direct access.
 defined('_JEXEC') or die;
 
+use Joomla\CMS\Factory;
+
 //add stylesheet for responsive container
-$document = JFactory::getDocument();
+$document = Factory::getDocument();
 $document->addStylesheet('plugins/fields/spotify/tmpl/style.css');
 
 $value = $field->value;
@@ -32,7 +33,7 @@ echo '<div align="left" id="sp_'. $value.'">
 if ($button == 'followbutton')
 {
 echo '<div align="left" id="sp_'. $value.'">
-	<iframe src="https://embed.spotify.com/follow/1/?uri='. $value.'&size=basic&show-count=1&theme=light" width="200" height="30" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+	<iframe src="https://embed.spotify.com/follow/1/?uri='. $value.'&size=basic&show-count=0&theme=light" width="200" height="30" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
 </div>';
 }
 
