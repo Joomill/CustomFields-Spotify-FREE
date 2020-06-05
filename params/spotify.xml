@@ -96,6 +96,11 @@
 				showon="mode:classic"
 				default="center"
 				/>
+
+			<field
+				name=""
+				type="upgrade"
+			/>
 						
 		</fieldset>
 	</fields>
