@@ -9,7 +9,9 @@
 // No direct access.
 defined('_JEXEC') or die;
 
-class JFormFieldUpgrade extends JFormField
+use Joomla\CMS\Form\FormField;
+
+class JFormFieldUpgrade extends FormField
 {
 	protected $type = 'upgrade';
 
