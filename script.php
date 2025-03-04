@@ -44,11 +44,9 @@ class plgFieldsSpotifyInstallerScript
      */
     public function preflight($type, $parent): bool
     {
-        if ($type !== 'uninstall')
-        {
+        if ($type !== 'uninstall') {
             // Check for the minimum PHP version before continuing
-            if (!empty($this->minimumPHPVersion) && version_compare(PHP_VERSION, $this->minimumPHPVersion, '<'))
-            {
+            if (!empty($this->minimumPHPVersion) && version_compare(PHP_VERSION, $this->minimumPHPVersion, '<')) {
                 Log::add(
                     Text::sprintf('JLIB_INSTALLER_MINIMUM_PHP', $this->minimumPHPVersion),
                     Log::WARNING,
@@ -57,8 +55,7 @@ class plgFieldsSpotifyInstallerScript
                 return false;
             }
             // Check for the minimum Joomla version before continuing
-            if (!empty($this->minimumJoomlaVersion) && version_compare(JVERSION, $this->minimumJoomlaVersion, '<'))
-            {
+            if (!empty($this->minimumJoomlaVersion) && version_compare(JVERSION, $this->minimumJoomlaVersion, '<')) {
                 Log::add(
                     Text::sprintf('JLIB_INSTALLER_MINIMUM_JOOMLA', $this->minimumJoomlaVersion),
                     Log::WARNING,
@@ -73,9 +70,9 @@ class plgFieldsSpotifyInstallerScript
     /**
      * Set the plugin to enabled on installation
      */
-	public function install($parent)
-	{
-		jimport('joomla.filesystem.file');
+    public function install($parent)
+    {
+        jimport('joomla.filesystem.file');
         Factory::getDBO()->setQuery("UPDATE `#__extensions` SET `enabled` = 1 WHERE `type` = 'plugin' AND`element` = 'spotify'")->execute();
-	}
+    }
 }

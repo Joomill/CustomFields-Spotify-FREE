@@ -9,20 +9,22 @@
 // No direct access.
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Language\Text;
+use Joomla\CMS\Form\Field\ListField;
 use Joomla\CMS\Form\FormHelper;
-use Joomla\CMS\Form\Field\ListField;;
+use Joomla\CMS\Language\Text;
+
+;
 
 FormHelper::loadFieldClass('list');
 
 class JFormFieldPRO extends ListField
 {
-	protected $type = 'pro';
+    protected $type = 'pro';
 
-	protected function getInput()
-	{
-		$text = Text::_('PLG_FIELDS_SPOTIFY_PARAMS_PRO_ONLY');
-		return
-			'<code>' . $text . '</code>';
-	}
+    protected function getInput()
+    {
+        $text = Text::_('PLG_FIELDS_SPOTIFY_PARAMS_PRO_ONLY');
+        return
+            '<code>' . $text . '</code>';
+    }
 }

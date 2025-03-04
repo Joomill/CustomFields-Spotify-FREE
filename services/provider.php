@@ -9,19 +9,19 @@
 
 \defined('_JEXEC') or die;
 
+use Joomill\Plugin\Fields\Spotify\Extension\Spotify;
 use Joomla\CMS\Extension\PluginInterface;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Plugin\PluginHelper;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 use Joomla\Event\DispatcherInterface;
-use Joomill\Plugin\Fields\Spotify\Extension\Spotify;
 
 return new class () implements ServiceProviderInterface {
     /**
      * Registers the service provider with a DI container.
      *
-     * @param   Container  $container  The DI container.
+     * @param Container $container The DI container.
      *
      * @return  void
      *
@@ -32,10 +32,10 @@ return new class () implements ServiceProviderInterface {
         $container->set(
             PluginInterface::class,
             function (Container $container) {
-                $subject    = $container->get(DispatcherInterface::class);
-                $plugin     = new Spotify(
+                $subject = $container->get(DispatcherInterface::class);
+                $plugin = new Spotify(
                     $subject,
-                    (array) PluginHelper::getPlugin('fields', 'spotify')
+                    (array)PluginHelper::getPlugin('fields', 'spotify')
                 );
                 $plugin->setApplication(Factory::getApplication());
 
