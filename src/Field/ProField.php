@@ -1,10 +1,12 @@
 <?php
 /*
- *  package: Custom Fields - Spotify plugin - FREE Version
+ *  package: Custom Fields - Youtube plugin - FREE Version
  *  copyright: Copyright (c) 2025. Jeroen Moolenschot | Joomill
  *  license: GNU General Public License version 3 or later
  *  link: https://www.joomill-extensions.com
  */
+
+namespace Joomill\Plugin\Fields\Spotify\Field;
 
 // No direct access.
 defined('_JEXEC') or die;
@@ -13,18 +15,17 @@ use Joomla\CMS\Form\Field\ListField;
 use Joomla\CMS\Form\FormHelper;
 use Joomla\CMS\Language\Text;
 
-;
-
 FormHelper::loadFieldClass('list');
 
-class JFormFieldPRO extends ListField
+class ProField extends ListField
 {
-    protected $type = 'pro';
+	protected $type = 'pro';
 
-    protected function getInput()
-    {
-        $text = Text::_('PLG_FIELDS_SPOTIFY_PRO_ONLY');
-        return
-            '<code>' . $text . '</code>';
-    }
+	protected function getInput()
+	{
+		$text = Text::_('PLG_FIELDS_SPOTIFY_PRO_ONLY');
+
+		return
+			'<code>' . $text . '</code>';
+	}
 }

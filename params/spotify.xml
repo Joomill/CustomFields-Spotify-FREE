@@ -3,7 +3,7 @@
     <fields name="fieldparams">
         <fieldset
                 name="fieldparams"
-                addfieldpath="/plugins/fields/spotify/elements"
+                addfieldprefix="Joomill\Plugin\Fields\Spotify\Field"
         >
             <field
                     name="button"
