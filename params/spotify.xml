@@ -6,61 +6,11 @@
                 addfieldprefix="Joomill\Plugin\Fields\Spotify\Field"
         >
             <field
-                    name="button"
-                    type="radio"
-                    class="btn-group btn-group-yesno"
-                    label="PLG_FIELDS_SPOTIFY_PARAMS_BUTTON_LABEL"
-                    description="PLG_FIELDS_SPOTIFY_PARAMS_BUTTON_DESC"
-                    default="playbutton"
-            >
-                <option value="playbutton">PLG_FIELDS_SPOTIFY_PARAMS_BUTTON_PLAYBUTTON</option>
-                <option value="followbutton">PLG_FIELDS_SPOTIFY_PARAMS_BUTTON_FOLLOWBUTTON</option>
-            </field>
-
-            <field
-                    name="view"
-                    type="pro"
-                    class="btn-group btn-group-yesno"
-                    label="PLG_FIELDS_SPOTIFY_PARAMS_VIEW_LABEL"
-                    description="PLG_FIELDS_SPOTIFY_PARAMS_VIEW_DESC"
-                    showon="button:playbutton"
-                    default="list"
-            />
-
-            <field
                     name="playcolor"
                     type="pro"
                     class="btn-group btn-group-yesno"
                     label="PLG_FIELDS_SPOTIFY_PARAMS_COLOR_LABEL"
                     description="PLG_FIELDS_SPOTIFY_PARAMS_COLOR_DESC"
-                    showon="button:playbutton"
-            />
-
-            <field
-                    name="size"
-                    type="pro"
-                    class="btn-group btn-group-yesno"
-                    label="PLG_FIELDS_SPOTIFY_PARAMS_FOLLOWBUTTON_SIZE_LABEL"
-                    description="PLG_FIELDS_SPOTIFY_PARAMS_FOLLOWBUTTON_SIZE_DESC"
-                    showon="button:followbutton"
-            />
-
-            <field
-                    name="followers"
-                    type="pro"
-                    class="btn-group btn-group-yesno"
-                    label="PLG_FIELDS_SPOTIFY_PARAMS_FOLLOWERS_LABEL"
-                    description="PLG_FIELDS_SPOTIFY_PARAMS_FOLLOWERS_DESC"
-                    showon="button:followbutton"
-            />
-
-            <field
-                    name="followcolor"
-                    type="pro"
-                    class="btn-group btn-group-yesno"
-                    label="PLG_FIELDS_SPOTIFY_PARAMS_COLOR_LABEL"
-                    description="PLG_FIELDS_SPOTIFY_PARAMS_COLOR_DESC"
-                    showon="button:followbutton"
             />
 
             <field
@@ -69,7 +19,6 @@
                     class="btn-group btn-group-yesno"
                     label="PLG_FIELDS_SPOTIFY_PARAMS_MODE_LABEL"
                     description="PLG_FIELDS_SPOTIFY_PARAMS_MODE_DESC"
-                    default="classic"
             />
 
             <field
@@ -77,7 +26,6 @@
                     type="pro"
                     label="PLG_FIELDS_SPOTIFY_PARAMS_WIDTH_LABEL"
                     description="PLG_FIELDS_SPOTIFY_PARAMS_WIDTH_DESC"
-                    showon="mode:classic"
             />
 
             <field
@@ -85,7 +33,6 @@
                     type="pro"
                     label="PLG_FIELDS_SPOTIFY_PARAMS_HEIGHT_LABEL"
                     description="PLG_FIELDS_SPOTIFY_PARAMS_HEIGHT_DESC"
-                    showon="mode:classic"
             />
 
             <field
@@ -93,8 +40,6 @@
                     type="pro"
                     label="PLG_FIELDS_SPOTIFY_PARAMS_ALIGN_LABEL"
                     description="PLG_FIELDS_SPOTIFY_PARAMS_ALIGN_DESC"
-                    showon="mode:classic"
-                    default="center"
             />
 
             <field

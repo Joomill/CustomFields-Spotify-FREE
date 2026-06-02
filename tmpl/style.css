@@ -23,3 +23,15 @@
     width: 100%;
     height: 100%;
 }
+
+.spotify-align-left {
+    text-align: left;
+}
+
+.spotify-align-center {
+    text-align: center;
+}
+
+.spotify-align-right {
+    text-align: right;
+}
