@@ -1,5 +1,4 @@
 <?php
-
 /*
  *  package: Custom Fields - Spotify plugin - FREE Version
  *  copyright: Copyright (c) 2026. Jeroen Moolenschot | Joomill
